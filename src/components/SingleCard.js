@@ -11,7 +11,7 @@ export default function SingleCard({ card, handleChoice, flipped, disabled }) {
   
   return (
     <div className="card">
-        <div className='flipped'>
+        <div className={flipped ? 'flipped' : ""}>
           <img src={card.src} className='front' alt="card front" />
           <img 
             className='back'
@@ -23,5 +23,3 @@ export default function SingleCard({ card, handleChoice, flipped, disabled }) {
     </div>
   )
 }
-
-// {flipped ? 'flipped' : ""}
